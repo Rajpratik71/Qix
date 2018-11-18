@@ -123,9 +123,9 @@
 
 介绍:Replication, atomicity and order in distributed systems
 
-* [《MIT course:Distributed Systems》](http://nil.csail.mit.edu/6.824/2015/)
+* [《MIT course:Distributed Systems》](http://nil.csail.mit.edu/6.824/2018/)
 
-介绍:2015年MIT分布式系统课程主页，这次用Golang作为授课语言。[6.824 Distributed Systems](https://pdos.csail.mit.edu/6.824/)课程主页
+介绍:2017年MIT分布式系统课程主页，用Golang作为授课语言。[6.824 Distributed Systems](https://pdos.csail.mit.edu/6.824/)课程主页.课程的课堂测试[Past Exams](https://pdos.csail.mit.edu/6.824/quizzes.html)可以很好的考察学习的结果。对于学习分布式系统比较推荐这个课程
 
 * [《Distributed systems for fun and profit》](http://book.mixu.net/distsys/)
 
@@ -855,3 +855,52 @@
 * [《Notes on Distributed Systems for Young Bloods》](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
 
 介绍:这篇文章没有理论，适合新手阅读分布式系统实践笔记
+
+* [《Design patterns for container-based distributed systems》](https://www.usenix.org/system/files/conference/hotcloud16/hotcloud16_burns.pdf)
+
+介绍:基于容器的分布式系统设计模式，文中提到了，单容器模式，所有的服务都集成在一个容器里面。单节点多容器模式，类似于kubernetes的Pods（任务组）。一个服务跨多个容器。对于这种模式可以分为Sidecar模式:譬如一个Web服务。Web由一个容器提供，日志处理由一个Logsaver容器提供。Ambassador模式（外交官模式）类似于SLB的设计模式，中间有一个代理容器用来分发功能到子容器。Adapter模式（适配器模式）主要是目的是想分布的执行和存储，统一的监控和管理。有点类似监控系统的设计，日志数据的输入不一，但是统一结果输出。多节点应用模式：这个分为选主模式（核心是选主算法）。Work Queue模式（工作队列模式）类似大规模电商系统的订单处理设计。Scatter/gather模式：有点类似MapRedue架构，分片处理，最后汇总结果。文章推荐[容器设计模式](http://www.infoq.com/cn/articles/kubernetes-and-cloud-native-app-container-design-pattern)
+
+* [《Making The Case For Building Scalable Stateful Services In The Modern Era》](http://highscalability.com/blog/2015/10/12/making-the-case-for-building-scalable-stateful-services-in-t.html)
+
+介绍: 在处理分布式系统的时候，很多经验告诉我们要尽量让服务无状态。而在实际分布式系统中，有状态的服务是一致存在的。例如消息队列、数据库存储服务。本文介绍了如何构建有状态的服务，如果保证有状态化服务的高可用。
+
+* [《LHD: Improving Cache Hit Rate by Maximizing Hit Density》](http://www.cs.cmu.edu/~beckmann/publications/papers/2018.nsdi.lhd.pdf)
+
+介绍:使用Maximizing Hit Density提高缓存命中.
+
+* [《Principles Of Chaos Engineering》](http://principlesofchaos.org/)
+
+介绍:混沌工程是在分布式系统上进行实验的学科, 目的是建立对系统抵御生产环境中失控条件的能力以及信心。
+大规模分布式软件系统的发展正在改变软件工程。作为一个行业，我们很快采用了提高开发灵活性和部署速度的实践。紧跟着这些好处的一个紧迫问题是：我们对投入生产的复杂系统中有多少信心？
+
+* [《The Paxos Algorithm》](https://www.youtube.com/watch?v=d7nAGI_NZPk)
+
+介绍:Google SRE 讲解分布式系统Paxos算法。
+
+* [《Time Series Database Lectures 》](https://db.cs.cmu.edu/seminar2017/)
+
+介绍:[Andy Pavlo](http://www.cs.cmu.edu/~pavlo/)组织的时序数据库系列演讲分享,InfluxDB存储引擎、QuasarDB内部剖析、TimescaleDB成长、Two Sigma时序数据库实践。
+
+* [《Andy CMU course：Advanced Database Systems》](https://15721.courses.cs.cmu.edu/spring2017/schedule.html)
+
+介绍:[Andy Pavlo](http://www.cs.cmu.edu/~pavlo/)在卡内基梅隆大学的高级数据库课程，以论文导读的形式。有[视频](https://www.youtube.com/playlist?list=PLSE8ODhjZXjYgTIlqf4Dy9KQpQ7kn1Tl0)。并发控制，乐观并发控制、多版本并发控制、OLAP索引、数据库压缩、存储模型、日志协议、检查点协议、优化器的实现、执行计划、并行join、查询编译、内存数据库.
+
+* [《CASPaxos: Replicated State Machines without logs》](https://arxiv.org/abs/1802.07000)
+
+介绍:这篇论文是Paxos算法变种，规避了Paxos算法的复杂性。同时达到了RSM的高性能要求。[github](https://github.com/rystsov/caspaxos) 上有开发者对这个算法进行了总结。已经有多种语言的实现方式。譬如Js和Golang版本的实现.
+
+* [《Facebook Immune System》](https://css.csail.mit.edu/6.858/2012/readings/facebook-immune.pdf)
+
+介绍:Facebook反作弊系统论文。
+
+* [《Logical Physical Clocks and Consistent Snapshots in Globally Distributed Databases》](https://cse.buffalo.edu/tech-reports/2014-04.pdf)
+
+介绍:混合逻辑时钟。
+
+* [《Riffle: optimized shuffle service for large-scale data analytics》](https://dl.acm.org/citation.cfm?id=3190534)
+
+介绍:Riffle：大规模分布式系统中的数据分析优化。
+
+* [《Omega: flexible, scalable schedulers for large compute clusters》](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/41684.pdf)
+
+介绍:本文描述了Google第二代容器化调度服务Omega的设计与诞生。作者也有一份[keynote](https://people.csail.mit.edu/malte/pub/talks/2013-04-17_eurosys-omega.pdf)。相关介绍[视频](https://www.youtube.com/watch?v=Zf__a9ReiPE)

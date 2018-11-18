@@ -1287,7 +1287,7 @@
 
 * [《Course notes for CS224N Winter17》](https://github.com/stanfordnlp/cs224n-winter17-notes)
 
-介绍:笔记：斯坦福CS224n深度学习NLP课程(2017)
+介绍:笔记：斯坦福CS224n深度学习NLP课程(2017),课程地址[http://web.stanford.edu/class/cs224n/](http://web.stanford.edu/class/cs224n/).这个里面的[设计报告堪比国内博士论文](http://web.stanford.edu/class/cs224n/reports.html)
 
 * [《Persontyle Workshop for Applied Deep Learning》](https://github.com/telecombcn-dl/2017-persontyle)
 
@@ -1415,4 +1415,44 @@
 
 * [《Speech and Language Processing, 3rd Edition》](https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf)
 
-介绍: 斯坦福大学免费电子书《语音和语言处理》第3版，自然语言处理概论，有关计算语言学和语音识别的知识。 ​​​​
+介绍: 斯坦福大学免费电子书《语音和语言处理》第3版，自然语言处理概论，有关计算语言学和语音识别的知识。
+
+* [《A Brief Introduction to Machine Learning for Engineers》](https://arxiv.org/pdf/1709.02840.pdf)
+
+介绍: 由伦敦国王学院编写的<工程师机器学习简明教程>
+
+* [《An Introduction to Machine Learning with R》](https://lgatto.github.io/IntroMachineLearningWithR/index.html)
+
+介绍: 免费书：R语言机器学习导论
+
+* [《An Introduction to Deep Learning for Tabular Data》](http://www.fast.ai/2018/04/29/categorical-embeddings/)
+
+介绍: 表格数据深度学习入门
+
+* [《OpenAI Scholars 2018 Reinforcement Learning Syllabus》](https://hollygrimm.com/syllabus_rl)
+
+介绍: OpenAI Scholars 2018 强化训练大纲.
+
+* [《Deep reinforcement learning》](https://www.youtube.com/playlist?list=PLJV_el3uVTsODxQFgzMzPLa16h6B8kWM_)
+
+介绍: 李宏毅深度强化学习课程（国语）
+
+* [《Intro to Neural Networks and Machine Learning》](http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/)
+
+介绍: 多伦多大学课程：CSC 321 Winter 2018.神经网络与机器学习入门
+
+* [《UC Berkeley：Deep Reinforcement Learning》](http://rail.eecs.berkeley.edu/deeprlcourse/)
+
+介绍: UC Berkeley深度強化學習課程,[Youtube](https://www.youtube.com/playlist?list=PLkFD6_40KJIxJMR-j5A1mkxK26gh_qg37) 、[Bilibili](https://www.bilibili.com/video/av32730838/)
+
+* [《The Illustrated Transformer》](https://jalammar.github.io/illustrated-transformer/)
+
+介绍: 图解Transformer
+
+* [《EE363 - Linear Dynamical Systems》](http://stanford.edu/class/ee363/lectures.html)
+
+介绍: 斯坦福《线性动态系统》课程讲义
+
+* [《Google at EMNLP 2018》](https://ai.googleblog.com/2018/10/google-at-emnlp-2018.html)
+
+介绍: Google的EMNLP 2018成果汇总
